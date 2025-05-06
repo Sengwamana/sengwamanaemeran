@@ -1,0 +1,85 @@
+.shortcode-list-modal {
+    .modal-body {
+        background-color: var(--bb-body-bg);
+    }
+
+    .shortcode-item-input:checked ~ .shortcode-item {
+        border-color: var(--bb-primary);
+
+        .checked-icon {
+            display: block;
+        }
+
+        .card {
+            border-color: transparent;
+        }
+    }
+
+    .shortcode-item {
+        position: relative;
+        cursor: pointer;
+        border: 2px transparent solid;
+        border-radius: 4px;
+
+        .checked-icon {
+            display: none;
+            position: absolute;
+            color: #fff;
+            top: 15px;
+            right: 15px;
+            border-radius: 50%;
+            background-color: var(--bb-primary);
+            padding: 3px;
+            z-index: 10;
+        }
+
+        .image-wrapper {
+            padding-top: 56.25%;
+            border-radius: 4px 4px 0 0;
+            border-bottom: 1px var(--bb-card-border-color) solid;
+
+            > img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                inset: 0;
+                object-fit: contain;
+            }
+
+            .large > img {
+                opacity: 0;
+                z-index: -1;
+                position: absolute;
+            }
+
+            &:hover .large > img {
+                opacity: 1;
+                z-index: 9999;
+            }
+        }
+
+        .card-header {
+            border-bottom: unset;
+
+            .card-title,
+            .card-subtitle {
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                -webkit-line-clamp: 1;
+            }
+        }
+
+        &:hover {
+            .card-header {
+                background-color: var(--bb-body-bg);
+            }
+        }
+
+        .use-button {
+            --bb-btn-padding-y: 0.25rem !important;
+            --bb-btn-padding-x: 0.5rem !important;
+            --bb-btn-font-size: 0.75rem !important;
+        }
+    }
+}

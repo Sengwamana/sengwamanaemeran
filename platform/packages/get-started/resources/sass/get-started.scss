@@ -1,0 +1,31 @@
+.get-started-modal {
+    .get-start-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 500px;
+
+        ul {
+            padding-left: 10px;
+        }
+
+        h4 {
+            font-size: 24px;
+        }
+
+        .select-colors-fonts {
+            margin: 25px 0;
+
+            h6 {
+                font-size: 16px;
+                padding-bottom: 5px;
+                border-bottom: var(--bb-border-width) var(--bb-border-style) var(--bb-border-color);
+            }
+        }
+
+        .get-start-icon {
+            --bb-icon-size: 7rem;
+            stroke-width: 1;
+        }
+    }
+}

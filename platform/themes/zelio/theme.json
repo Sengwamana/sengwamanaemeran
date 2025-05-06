@@ -1,0 +1,9 @@
+{
+    "id": "botble/zelio",
+    "name": "Zelio",
+    "namespace": "Theme\\Zelio\\",
+    "author": "Botble Technologies",
+    "url": "https://botble.com",
+    "version": "1.0.0",
+    "description": "A sleek, contemporary theme for personal portfolios."
+}

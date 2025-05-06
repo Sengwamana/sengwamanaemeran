@@ -1,0 +1,83 @@
+.select2-container--default {
+    display: block;
+
+    @at-root select + & {
+        box-shadow: $input-box-shadow;
+        z-index: 1;
+    }
+
+    *:focus {
+        outline: 0;
+    }
+
+    .select2-selection {
+        width: 100%;
+        min-height: $s2bs5-height;
+        padding: calc((0.5625rem - 1px) - 0px) calc(0.75rem - 5px) calc(((0.5625rem - 1px) - 3px) - 0px) calc(.75rem - 5px);
+        font-family: $s2bs5-font-family;
+        font-weight: $s2bs5-font-weight;
+        line-height: $s2bs5-line-height;
+        color: $s2bs5-color;
+        background-color: var(--#{$prefix}bg-forms);
+        border: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color);
+        box-shadow: var(--bb-box-shadow-input);
+        @include transition($s2bs5-transition);
+        appearance: none;
+    }
+
+    &.select2-container--focus,
+    &.select2-container--open {
+        .select2-selection {
+            border-color: $form-select-focus-border-color;
+            box-shadow: $form-select-focus-box-shadow;
+        }
+    }
+
+    &.select2-container--open.select2-container--below .select2-selection {
+        border-bottom: 0 solid transparent;
+        @include border-bottom-radius(0);
+    }
+
+    &.select2-container--open.select2-container--above .select2-selection {
+        border-top: 0 solid transparent;
+        @include border-top-radius(0);
+    }
+
+    .select2-search {
+        width: 100%;
+    }
+
+    .select2-search--inline {
+        float: unset;
+
+        .select2-search__field {
+            vertical-align: top;
+        }
+    }
+
+    .select2-selection--single,
+    .select2-selection--multiple {
+        .select2-selection__clear {
+            position: absolute;
+            top: 50%;
+            right: $s2bs5-indicator-padding;
+            width: $s2bs5-clear-width;
+            height: $s2bs5-clear-height;
+            padding: $s2bs5-clear-padding-y $s2bs5-clear-padding-x;
+            overflow: hidden;
+            text-indent: 100%;
+            white-space: nowrap;
+            background: $s2bs5-clear-bg;
+            transform: translateY(-50%);
+            margin: 0;
+
+            &:hover {
+                background: $s2bs5-clear-hover-bg;
+            }
+
+            >span {
+                display: none;
+            }
+        }
+    }
+}

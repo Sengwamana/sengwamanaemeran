@@ -1,0 +1,11 @@
+{
+    "id": "botble/cookie-consent",
+    "name": "Cookie Consent",
+    "namespace": "Botble\\CookieConsent\\",
+    "provider": "Botble\\CookieConsent\\Providers\\CookieConsentServiceProvider",
+    "author": "Botble Technologies",
+    "url": "https://botble.com",
+    "version": "2.0.7",
+    "description": "Cookie Consent",
+    "minimum_core_version": "7.3.0"
+}

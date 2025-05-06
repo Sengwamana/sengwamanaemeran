@@ -1,0 +1,40 @@
+.handle-tool-drag {
+    background: #f7f7f7;
+    height: 20px;
+    user-select: none;
+    cursor: row-resize;
+    border: 1px solid #dddddd;
+    line-height: 14px;
+
+    &:before {
+        content: '\2261';
+        color: #999999;
+        position: absolute;
+        left: 50%;
+        font-size: 20px;
+    }
+
+    &:hover {
+        background: #f0f0f0;
+
+        &:before {
+            color: #000000;
+        }
+    }
+}
+
+.panel-section {
+    .panel-section-item {
+        .panel-section-item-icon {
+            height: 40px;
+            width: 40px;
+            background-color: var(--bb-body-bg);
+            padding: 4px;
+            border-radius: var(--bb-card-border-radius);
+
+            .icon {
+                color: var(--bb-icon-color);
+            }
+        }
+    }
+}

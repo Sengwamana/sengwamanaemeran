@@ -1,0 +1,24 @@
+body[dir="rtl"] {
+    .dropdown-item {
+        i {
+            transform: rotate(180deg);
+        }
+    }
+
+    .simple-pagination {
+        .pagination {
+            .page-item {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .modal {
+        .modal-body {
+            .btn-close {
+                right: auto;
+                left: 0;
+            }
+        }
+    }
+}

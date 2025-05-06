@@ -1,0 +1,29 @@
+.select2-container--default {
+    .select2-selection--single {
+        --#{$prefix}form-select-bg-img: #{escape-svg(url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%238a97ab' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e"))};
+
+        background-image: var(--#{$prefix}form-select-bg-img), var(--#{$prefix}form-select-bg-icon, none);
+        background-repeat: no-repeat;
+        background-position: $s2bs5-bg-position;
+        background-size: $s2bs5-bg-size;
+        padding: 0.5625rem 0.75rem;
+        height: unset;
+
+        .select2-selection__rendered {
+            padding: 0;
+            font-weight: $s2bs5-font-weight;
+            line-height: $s2bs5-line-height;
+            color: $s2bs5-color;
+
+            .select2-selection__placeholder {
+                font-weight: $s2bs5-font-weight;
+                line-height: $s2bs5-line-height;
+                color: $s2bs5-placeholder-color;
+            }
+        }
+
+        .select2-selection__arrow {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.select2-container--default {
+    .select2-selection--multiple {
+        .select2-selection__rendered {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding-left: 0;
+            margin: 0;
+            list-style: none;
+
+            .select2-selection__choice {
+                background: var(--#{$prefix}bg-surface-secondary);
+                border: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color);
+                border-radius: calc(var(--#{$prefix}border-radius) - 1px);
+                color: var(--#{$prefix}body-color);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 1px 5px;
+                margin: 0 3px 3px 0;
+                cursor: auto;
+
+                .select2-selection__choice__remove {
+                    width: $s2bs5-clear-width;
+                    height: $s2bs5-clear-height;
+                    padding: $s2bs5-clear-padding-y $s2bs5-clear-padding-x;
+                    margin-right: .25rem;
+                    overflow: hidden;
+                    text-indent: 100%;
+                    white-space: nowrap;
+                    background: $s2bs5-clear-bg;
+                    border: 0;
+                    position: unset;
+
+                    &:hover {
+                        background: $s2bs5-clear-hover-bg;
+                    }
+
+                    >span {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .select2-search {
+            display: block;
+            width: 100%;
+            height: $s2bs5-height-inner;
+
+            .select2-search__field {
+                resize: none;
+                width: 100%;
+                height: $s2bs5-height-inner;
+                margin-top: 0;
+                margin-left: 0;
+                font-family: $s2bs5-font-family;
+                line-height: $s2bs5-line-height;
+                background-color: transparent;
+            }
+        }
+
+        .select2-selection__clear {
+            right: $s2bs5-padding-x;
+        }
+    }
+}

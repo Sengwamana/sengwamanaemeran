@@ -1,0 +1,19 @@
+.widget-item {
+    .table-widget {
+        height: 100% !important;
+
+        > .table-wrapper {
+            height: 100% !important;
+
+            > .table-responsive {
+                height: 100% !important;
+
+                > .dataTables_wrapper {
+                    height: 100% !important;
+                    display: flex !important;
+                    flex-direction: column !important;
+                }
+            }
+        }
+    }
+}

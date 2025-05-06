@@ -1,0 +1,19 @@
+.modal-full {
+    width: 100vw;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+
+    @media (min-width: 992px) {
+        width: calc(100vw - 8rem);
+        margin: auto;
+    }
+
+    > .modal-content {
+        height: calc(100vh - 5rem);
+
+        @media (min-width: 992px) {
+            height: calc(100vh - 8rem);
+        }
+    }
+}

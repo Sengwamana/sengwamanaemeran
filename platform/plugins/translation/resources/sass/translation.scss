@@ -1,0 +1,19 @@
+.box-translation {
+    a.status-1 {
+        font-weight: bold;
+    }
+
+    &.empty-translation {
+        margin-bottom: 0;
+    }
+}
+
+.editable-input {
+    .form-control {
+        height: 34px;
+    }
+}
+
+.input-large {
+    width: 320px !important;
+}

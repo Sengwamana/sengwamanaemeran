@@ -1,0 +1,86 @@
+.permissions-tree {
+    .permissions-item {
+        background-color: #f6f8fb;
+        border-radius: 4px;
+        padding: 0;
+        margin-bottom: 10px;
+        .permissions-header, .permissions-body{
+            padding: 10px;
+        }
+        .permissions-body{
+            padding: 10px 20px;
+        }
+        .permissions-header{
+            background-color: #f2f5f7;
+            border-bottom: 1px solid #cfd7e0;
+        }
+    }
+    .daredevel-tree {
+        border: none !important;
+        border-left: var(--bb-border-width) solid var(--bb-border-color) !important;
+        padding-top: 5px;
+
+        & > div {
+            padding-left: 10px;
+        }
+
+        &:not(:has(ul)) {
+            & > .daredevel-tree-anchor {
+                display: none;
+            }
+        }
+    }
+
+    .daredevel-tree-anchor {
+        top: 0.5rem !important;
+    }
+    .single-node li{
+        margin: 0;
+        padding: 3px 0pt 3px 18px;
+    }
+    
+    .form-check {
+        .form-check-input {
+            &.check-blue {
+                &:checked {
+                    background-color: $color-blue;
+                }
+                &:focus {
+                    border-color: $color-blue;
+                }
+            }
+            &.check-danger {
+                &:checked {
+                    background-color: $color-red;
+                }
+                &:focus {
+                    border-color: $color-red;
+                }
+            }
+            &.check-success {
+                &:checked {
+                    background-color: $color-green;
+                }
+                &:focus {
+                    border-color: $color-green;
+                }
+            }
+            &.check-yellow {
+                &:checked {
+                    background-color: #efc656;
+                }
+                &:focus {
+                    border-color: #efc656;
+                }
+            }
+            &.check-secondary {
+                &:checked {
+                    background-color: #6c7a91;
+                }
+                &:focus {
+                    border-color: #6c7a91;
+                }
+            }
+        }
+    }
+}

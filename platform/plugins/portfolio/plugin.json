@@ -1,0 +1,10 @@
+{
+    "id": "botble/portfolio",
+    "name": "Portfolio",
+    "namespace": "Botble\\Portfolio\\",
+    "provider": "Botble\\Portfolio\\Providers\\PortfolioServiceProvider",
+    "author": "Botble Technologies",
+    "url": "https://botble.com",
+    "version": "1.0.2",
+    "description": "Portfolio management system"
+}

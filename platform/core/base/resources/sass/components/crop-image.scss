@@ -1,0 +1,72 @@
+.crop-image-container {
+    .avatar-view {
+        width: fit-content;
+        position: relative;
+
+        .backdrop {
+            background-color: rgba(0, 0, 0, 0.5);
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+            opacity: 0;
+        }
+
+        .action {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            display: none;
+        }
+
+        &:hover {
+            .backdrop {
+                opacity: 1;
+            }
+
+            .action {
+                display: flex;
+                gap: 0.75rem;
+            }
+        }
+    }
+
+    .modal {
+        .cropper-image-wrap {
+            height: calc(100% - 5.25rem);
+            width: 100%;
+            background-color: var(--bb-bg-forms);
+            background-clip: padding-box;
+            border: var(--bb-border-width) solid var(--bb-border-color);
+            border-radius: var(--bb-border-radius);
+            box-shadow: var(--bb-box-shadow-input);
+        }
+
+        .img-preview {
+            background-color: #fff;
+            border: 1px solid #eee;
+            margin-top: 1.75rem;
+            overflow: hidden;
+            margin-left: 1rem;
+
+            &.preview-lg {
+                height: 9rem;
+                width: 9rem;
+            }
+
+            &.preview-md {
+                height: 4.5rem;
+                width: 4.5rem;
+            }
+
+            &.preview-sm {
+                height: 2.25rem;
+                width: 2.25rem;
+            }
+        }
+    }
+}

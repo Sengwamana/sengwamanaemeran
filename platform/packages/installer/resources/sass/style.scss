@@ -1,0 +1,79 @@
+body {
+    background: rgb(63, 94, 251);
+    background: linear-gradient(45deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.min-h-full {
+    min-height: 100vh;
+}
+
+.installer-container {
+    max-width: 1024px !important;
+
+    .installer-title {
+        font-size: 36px;
+    }
+
+    .installer-wrapper {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(4px);
+        border-radius: 4px;
+        overflow: hidden;
+
+        .steps {
+            .step-item.active ~ .step-item {
+                color: #989ea7;
+            }
+
+            .step-item.active ~ .step-item:before {
+                background: #d3d5d8;
+            }
+        }
+
+        .card {
+            border-radius: unset;
+
+            .card-header {
+                border-bottom: 0;
+
+                .card-title {
+                    font-size: 18px;
+                    text-align: center;
+                }
+            }
+
+            .card-body {
+                min-height: 320px;
+            }
+        }
+
+        .steps-vertical {
+            .step-item {
+                font-size: 14px;
+                padding-top: 3px;
+
+                &:not(:first-child) {
+                    margin-top: 30px;
+
+                    &:after {
+                        height: calc(100% + 30px);
+                    }
+                }
+
+                &:not(:last-child) {
+                    &:after {
+                        height: calc(100% + 30px);
+                        left: calc(var(--bb-steps-dot-size) * 0.65);
+                    }
+                }
+
+                &:before {
+                    padding: 4px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

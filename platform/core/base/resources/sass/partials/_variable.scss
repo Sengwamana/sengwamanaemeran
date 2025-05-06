@@ -1,0 +1,14 @@
+:root {
+    --bb-font-sans-serif: var(--primary-font), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --bb-primary: var(--primary-color);
+    --bb-primary-rgb: var(--primary-color-rgb);
+    --bb-secondary: var(--secondary-color);
+    --bb-secondary-rgb: var(--secondary-color-rgb);
+    --bb-heading-color: var(--heading-color);
+    --bb-body-color: var(--text-color);
+    --bb-body-color-rgb: var(--text-color-rgb);
+    --bb-link-color: var(--link-color);
+    --bb-link-color-rgb: var(--link-color-rgb);
+    --bb-link-hover-color: var(--link-hover-color);
+    --bb-link-hover-color-rgb: var(--link-hover-color-rgb);
+}

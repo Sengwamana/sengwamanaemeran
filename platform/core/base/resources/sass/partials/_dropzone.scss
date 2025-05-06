@@ -1,0 +1,21 @@
+.dropzone {
+    border: var(--bb-border-width) dashed var(--bb-border-color);
+    border-radius: 5px;
+    cursor: pointer;
+    min-height: 0;
+    background: var(--bb-body-bg);
+
+    .dz-message {
+        margin: 0.6rem;
+    }
+
+    h4 {
+        margin-bottom: 0.4rem;
+    }
+
+    &.dz-clickable {
+        a, i {
+            cursor: pointer;
+        }
+    }
+}

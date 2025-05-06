@@ -1,0 +1,41 @@
+.ui-selector {
+    .form-imagecheck {
+        width: 100%;
+
+        .title {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            -webkit-line-clamp: 1;
+        }
+
+        .form-imagecheck-figure {
+            padding-top: 75%;
+            overflow: hidden;
+            width: 100%;
+
+            .form-imagecheck-image {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                margin: auto;
+            }
+        }
+    }
+
+    &.without-ratio {
+        .form-imagecheck-figure {
+            padding: unset !important;
+            overflow: unset !important;
+
+            .form-imagecheck-image {
+                position: unset !important;
+                inset: unset !important;
+                object-fit: unset !important;
+                margin: unset !important;
+            }
+        }
+    }
+}

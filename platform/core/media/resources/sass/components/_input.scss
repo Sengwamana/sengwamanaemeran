@@ -1,0 +1,52 @@
+.rv-media-container {
+    .custom-checkbox {
+        position: relative;
+
+        label {
+            margin: 0;
+            display: block;
+            cursor: pointer;
+        }
+
+        input {
+            width: 0;
+            height: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+
+        span {
+            width: 20px;
+            height: 20px;
+            border: var(--bb-border-width) var(--bb-border-style) var(--bb-border-color-translucent);
+            display: block;
+            position: relative;
+            border-radius: var(--bb-border-radius);
+            box-shadow: var(--bb-box-shadow-input);
+
+            &:before {
+                content: $fa-var-check;
+                font-family: $font-awesome;
+                font-size: 0;
+                font-weight: 600;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                color: var(--bb-white);
+                @include lib-css(transform, translate(-50%, -50%));
+                @include lib-css(transition, all 0.3s ease-in-out);
+            }
+        }
+
+        input:checked + span {
+            background-color: var(--bb-primary);
+
+            &:before {
+                font-size: 13px;
+            }
+        }
+    }
+}

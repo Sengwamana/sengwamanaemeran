@@ -1,0 +1,94 @@
+.form-imagecheck-tick {
+    .form-imagecheck-input[type=radio]:checked ~ .form-imagecheck-figure:before {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8.5l2.5 2.5l5.5 -5.5'/%3e%3c/svg%3e");
+    }
+}
+
+div[data-bb-toggle="tree-checkboxes"] {
+    max-height: 400px;
+    overflow-y: auto;
+
+    > ul {
+        padding-left: 5px;
+        padding-top: 5px;
+
+        > li {
+            &:last-child {
+                > label {
+                    margin-bottom: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+div[data-bb-toggle="tree-checkboxes"] ul li, .multi-check-list-wrapper {
+    label {
+        margin-bottom: 0.75rem !important;
+    }
+}
+
+.multi-check-list-wrapper {
+    overflow: auto;
+    max-height: 25rem;
+}
+
+.form-fieldset {
+    > .mb-3.position-relative {
+        &:last-child {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .form-check {
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .form-check-input:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+form {
+    .card {
+        .card-body {
+            label {
+                &.form-check {
+                    margin-bottom: 0;
+                }
+            }
+
+            .form-check-group + .form-hint {
+                margin-top: 0.5rem;
+            }
+        }
+
+        &.meta-boxes {
+            .card-body {
+                .form-fieldset.fieldset-for-multi-check-list {
+                    background: transparent;
+                    border: none;
+                    padding: 0;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+
+    .form-check + .form-hint {
+        margin-top: 0.5rem;
+    }
+}
+
+.repeater-group {
+    .form-fieldset {
+        .repeater-item-group:first-child {
+            small.charcounter {
+                right: 2rem;
+            }
+        }
+    }
+}
+

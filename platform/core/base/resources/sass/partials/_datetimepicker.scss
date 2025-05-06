@@ -1,0 +1,62 @@
+.bootstrap-datetimepicker-widget,
+.bootstrap-timepicker-widget {
+    &.dropdown-menu {
+        display: block;
+        position: absolute;
+        left: 0;
+        z-index: 1000;
+        float: left;
+        min-width: 160px;
+        padding: 5px 0;
+        margin: 2px 0 0;
+        font-size: 14px;
+        text-align: left;
+        list-style: none;
+        background-color: #ffffff;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    }
+
+    .collapse.in {
+        display: block;
+    }
+
+    .glyphicon {
+        position: relative;
+        top: 1px;
+        display: inline-block;
+        font: 900 normal normal 14px/1 'Font Awesome 6 Free';
+        font-style: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .glyphicon-time:before {
+        content: '\f017';
+    }
+
+    .glyphicon-chevron-left:before {
+        content: '\f053';
+    }
+
+    .glyphicon-chevron-right:before {
+        content: '\f054';
+    }
+
+    .glyphicon-chevron-up:before {
+        content: '\f077';
+    }
+
+    .glyphicon-chevron-down:before {
+        content: '\f078';
+    }
+
+    .glyphicon-calendar:before {
+        content: '\f073';
+    }
+}

@@ -1,0 +1,42 @@
+body[dir=rtl] {
+    .svg-icon-ti-ti-arrow-right,
+    .ri-arrow-right-up-line {
+        transform: rotate(180deg);
+    }
+
+    .offCanvas__info {
+        transform: translateX(100%);
+        right: 0;
+        left: unset;
+
+        &.active {
+            transform: translateX(0);
+        }
+    }
+
+    .offCanvas__close-icon {
+        text-align: left;
+    }
+
+    input[type=email],
+    input[type=number],
+    input[type=password],
+    input[type=search],
+    input[type=tel],
+    input[type=text],
+    input[type=url],
+    textarea {
+        text-align: right;
+    }
+
+    .section-hero-2 {
+        .icon-decorate {
+            margin-right: unset;
+            margin-left: 210px;
+        }
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        transform: rotate(180deg);
+    }
+}

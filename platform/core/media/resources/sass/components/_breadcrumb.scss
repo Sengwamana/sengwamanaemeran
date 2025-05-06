@@ -1,0 +1,26 @@
+.rv-media-breadcrumb {
+    @include lib-css(flex-grow, 1);
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .breadcrumb {
+        background-color: transparent;
+        margin-bottom: 0;
+
+        li:last-child:not(:first-child) {
+            a {
+                --bb-text-opacity: 1;
+                color: rgba(var(--bb-muted-rgb), var(--bb-text-opacity)) !important;
+            }
+        }
+    }
+
+    .breadcrumb > li + li:before {
+        padding: 0 5px;
+        color: #ccc;
+        content: '/\00a0';
+    }
+}

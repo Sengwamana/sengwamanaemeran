@@ -1,0 +1,10 @@
+{
+    "name": "botble/analytics",
+    "description": "Analytics plugin",
+    "type": "package",
+    "require": {
+        "phpseclib/bcmath_compat": "^2.0",
+        "google/analytics-data": "^0.21",
+        "symfony/cache": "^5.4|^6.0|^7.0"
+    }
+}

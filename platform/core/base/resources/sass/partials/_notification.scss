@@ -1,0 +1,47 @@
+#notification-sidebar {
+    .btn-close {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        padding: calc(var(--bb-offcanvas-padding-y) * 0.5) calc(var(--bb-offcanvas-padding-x) * 0.5);
+        margin-top: calc(-0.5 * var(--bb-offcanvas-padding-y));
+        margin-right: calc(-0.5 * var(--bb-offcanvas-padding-x));
+        margin-bottom: calc(-0.5 * var(--bb-offcanvas-padding-y));
+    }
+
+    .offcanvas-header {
+        align-items: start;
+
+        .mark-all-notifications-as-read,
+        .clear-notifications {
+            all: unset;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .mark-all-notifications-as-read {
+            color: var(--bb-primary);
+        }
+
+        .clear-notifications {
+            color: var(--bb-danger);
+        }
+
+        .badge-notification {
+            font-size: 65%;
+            transform: translate(95%, -50%);
+        }
+    }
+
+    .btn-delete-notification {
+        all: unset;
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+        text-align: center;
+        color: var(--bb-muted);
+    }
+}

@@ -1,0 +1,25 @@
+.rv-upload-progress {
+    box-shadow: 0 0 4px rgba(58, 85, 113, 0.3);
+    width: 600px;
+    z-index: 9999;
+    @include lib-css(transition, all 0.3s linear);
+
+    &.hide-the-pane {
+        @include lib-css(transform, translateX(100%));
+        @include opacity(0);
+    }
+
+    .close-pane {
+        right: 12px;
+        margin-top: -12px;
+        @include lib-css(transition, all 0.3s ease-in-out);
+
+        &:hover {
+            @include opacity(0.8);
+        }
+
+        svg {
+            margin: 0;
+        }
+    }
+}

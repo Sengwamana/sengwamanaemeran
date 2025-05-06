@@ -1,0 +1,62 @@
+.widget-main {
+    li {
+        list-style: none;
+    }
+
+    .widget-item {
+        &:hover {
+            cursor: pointer;
+        }
+
+        .card-no-border-bottom-radius {
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .widget-content {
+            display: none;
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+            border-top: none;
+
+            form {
+                .form-group:not(:nth-child(2)) {
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+
+    .sidebar-item {
+        .card-body {
+            .widget-description {
+                display: none;
+            }
+
+            &:has(.sortable-ghost) {
+                .dropzone {
+                    display: none;
+                }
+            }
+
+            .sortable-ghost {
+                ~ .dropzone,
+                + .dropzone {
+                    display: none;
+                }
+
+                .btn-action {
+                    i {
+                        display: block !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .ts-control {
+        .item {
+            width: calc(100% - 15px) !important;
+        }
+    }
+}

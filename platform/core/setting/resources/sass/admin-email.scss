@@ -1,0 +1,25 @@
+[data-bb-toggle='admin-email'] {
+    .more-email {
+        position: relative;
+
+        > a {
+            position: absolute;
+            right: 0;
+            font-size: 12px;
+            display: none;
+        }
+
+        & + .more-email {
+            > a {
+                display: block;
+            }
+        }
+    }
+
+    #add {
+        &.disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+    }
+}

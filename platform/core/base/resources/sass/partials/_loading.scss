@@ -1,0 +1,46 @@
+.loading-spinner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #fff, $alpha: 0.5);
+    z-index: 1;
+
+    &:after {
+        position: absolute;
+        top: calc(50% - 20px);
+        inset-inline-end: 45%;
+        content: ' ';
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 3px solid;
+        border-color: var(--bb-primary) transparent var(--bb-primary) transparent;
+        animation: loading-spinner 0.9s linear infinite;
+    }
+}
+
+@include color-mode(dark) {
+    .loading-spinner {
+        background-color: rgba($color: #333, $alpha: 0.5);
+    }
+}
+
+@keyframes loading-spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+[data-bs-theme="dark"] {
+    .loading-spinner {
+        background-color: rgba($color: var(--bb-body-color-rgb), $alpha: 0.05);
+    }
+}

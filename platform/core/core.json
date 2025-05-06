@@ -1,0 +1,10 @@
+{
+    "productId": "55A26411",
+    "source": "envato",
+    "apiUrl": "https://license.botble.com",
+    "apiKey": "CAF4B17F6D3F656125F9",
+    "version": "1.1.1",
+    "marketplaceUrl": "https://marketplace.botble.com/api/v1",
+    "marketplaceToken": "735e480f2269e22432e8ebefbaac213f0b4cf7e2",
+    "minimumPhpVersion": "8.2.0"
+}

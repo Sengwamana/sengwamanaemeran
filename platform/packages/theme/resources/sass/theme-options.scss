@@ -1,0 +1,19 @@
+.theme-option {
+    &.card {
+        .card-body {
+            background-color: var(--bb-card-cap-bg);
+
+            .tab-content {
+                background-color: var(--bb-card-bg);
+            }
+
+            .nav {
+                width: 100%;
+
+                @media (min-width: 768px) {
+                    width: 20rem;
+                }
+            }
+        }
+    }
+}
